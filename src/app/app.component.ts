@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cigogne-front';
+  show_easter_egg = false;
+
+  openEasterEgg() : void {
+    this.show_easter_egg = !this.show_easter_egg;
+    console.warn("Bravo ! Vous avez débloqué le konami code !");
+  }
 }
